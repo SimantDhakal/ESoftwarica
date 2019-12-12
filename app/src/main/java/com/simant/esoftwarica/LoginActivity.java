@@ -53,7 +53,7 @@ public class LoginActivity extends AppCompatActivity {
         imgBtnSignup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (email.getText().toString().equals("simant@gmail.com") || password.getText().toString().equals("123456")) {
+                if (email.getText().toString().equals("softwarica") || password.getText().toString().equals("coventry")) {
                     signin();
                 } else {
                     Toast.makeText(getApplicationContext(), "Please enter valid credentail!!", Toast.LENGTH_SHORT).show();
