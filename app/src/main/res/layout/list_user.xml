@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="7sp"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/stimage"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="5dp"
+                android:src="@mipmap/ic_launcher" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:paddingLeft="12sp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/stfullname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:text="Simant Dhakal" />
+
+                <TextView
+                    android:id="@+id/st_age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/stfullname"
+                    android:layout_marginTop="10dp"
+                    android:textSize="13sp"
+                    android:text="20 " />
+
+
+                <TextView
+                    android:id="@+id/staddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/st_age"
+                    android:layout_marginTop="10dp"
+                    android:textSize="13sp"
+                    android:text="Balkot" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/stdelete"
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:layout_alignTop="@+id/stfullname"
+                    android:layout_toRightOf="@id/stfullname"
+                    android:src="@drawable/delete"
+                    android:text="Delete" />
+
+                <TextView
+                    android:id="@+id/stgender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/staddress"
+                    android:layout_alignTop="@+id/staddress"
+                    android:layout_toRightOf="@id/staddress"
+                    android:textAlignment="center"
+                    android:paddingTop="20dp"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:text="Female" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
